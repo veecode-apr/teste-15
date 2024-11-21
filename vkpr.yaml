@@ -1,0 +1,5 @@
+global:
+  domain: vee.codes
+
+  provider: aws
+  ingressClassName: 

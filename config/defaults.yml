@@ -1,0 +1,7 @@
+---
+cluster_name: "teste-15"
+VPC_ID: "vpc-028934df49635fa39"
+SUBNET_ID: ""
+instance_type: "t3.medium"
+keypair: ""
+volume_size: "30"

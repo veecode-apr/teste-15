@@ -1,0 +1,36 @@
+values:
+    ### Enviroment Settings
+    environment: platform_environment
+    ### Project Settings
+    cluster_name: teste-15
+    owner: group:default/admin
+    instance_type: t3.medium
+    volume_size: 30
+    keypair_name: 
+    ### Network Settings
+    vpc_id: vpc-028934df49635fa39
+    domain: vee.codes
+    hostedZoneId: FD3o543i5o656XPTOO
+    subnet_id: 
+    ### Ingress Settings
+    ingress_window: false
+    ingress_type: 
+    kong_mode: 
+    external_db: 
+    basic_auth: 
+    certmanager_window: 
+    issuer_type: 
+    email: 
+    ### Terraform Backend Settings
+    terraformStateBucketName: 
+    terraformStateBucketRegion: 
+    infracost: false
+    ### Publish Settings
+    host: github.com
+    destination: veecode-apr/teste-15
+    specPublish: ${{ parameters.specPublish | parseRepoUrl | pick('owner') }}/${{ parameters.specPublish | parseRepoUrl | pick('repo') }}
+    specPublishRepo: ${{ parameters.specPublish | parseRepoUrl | pick('repo') }}
+    specPublishBranch: 
+    ### Observability Settings
+    observability_window: false
+    observability_grafana_url: 
